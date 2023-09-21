@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovementAnim : MonoBehaviour
 {
     // Player's rigidbody2d
     private Rigidbody2D rb;
+    // Player's animator
+    private Animator animator;
+    // Player's sprite renderer
+    private SpriteRenderer spr;
 
     // Can the player jump?
     private bool canJump;
@@ -19,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
     {
         // Assigning the player variables
         rb = gameObject.GetComponent<Rigidbody2D>();
+        animator = gameObject.GetComponent<Animator>();
+        spr = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -35,7 +41,17 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown("w") && canJump) {
             rb.AddForce(Vector2.up * 13.0f, ForceMode2D.Impulse);
+            animator.SetFloat("yPos", 1.0f);
         }
+
+        // Animation and Direction
+        if (x < 0.0f) {
+            spr.flipX = true;
+        } else if (x > 0.0f) {
+            spr.flipX = false;
+        }
+        animator.SetFloat("xPos", x);
+        animator.SetFloat("yPos", y);
     }
 
     void OnCollisionEnter2D(Collision2D other) {
@@ -45,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (other.gameObject.CompareTag("Head")) {
             rb.AddForce(Vector2.up * 15.0f, ForceMode2D.Impulse);
+            animator.SetFloat("yPos", 1.0f);
             Destroy(other.gameObject.transform.parent.gameObject);
         }
     }
