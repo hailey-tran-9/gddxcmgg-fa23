@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2dcae213da29d6d4f911be10399d21d1
+guid: ef31a32cff0eddd4890369fee8b1dcaa
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29ad865de03f5ba40ac2a379750f2817
-      internalID: -892184205
+      spriteID: e16aecc6016b45848901cfb3717e81bc
+      internalID: -1451115431
       vertices: []
       indices: 
       edges: []
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c81385cd3e15c0a4eb65ac7d021a8220
-      internalID: 413830345
+      spriteID: b7e29f07a732216498c7ad664d43ea2a
+      internalID: 1146697916
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab448320f534b8849a29018f83b42d18
-      internalID: -875756072
+      spriteID: 19dd7c5505ec9314db73a5eb13b09551
+      internalID: -917872075
       vertices: []
       indices: 
       edges: []
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b00b2a414125494183113f7125fa48c
-      internalID: 1234657416
+      spriteID: 8183a49d4c71bbc43bbe18c79978b4e4
+      internalID: -1801556886
       vertices: []
       indices: 
       edges: []
@@ -211,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      frog-idle_1: 413830345
-      frog-idle_0: -892184205
-      frog-idle_3: 1234657416
-      frog-idle_2: -875756072
+      frog-idle_1: 1146697916
+      frog-idle_0: -1451115431
+      frog-idle_3: -1801556886
+      frog-idle_2: -917872075
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
